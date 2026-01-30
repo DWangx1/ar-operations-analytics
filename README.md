@@ -12,9 +12,17 @@ Finance teams often rely on manual Excel processes to answer:
 
 This project demonstrates a structured, repeatable analytics pipeline to support these questions.
 
+
 ## Dataset
-Public demo invoice and payment data.  
+Source: Canada Open Data – Aging of Taxes and Other Accounts Receivable
+
+The dataset simulates real-world accounts receivable aging data and is used as a stand-in for invoice and payment exports commonly received by finance teams.
+
+The raw file is stored as:
+- data_raw/chronoimpots-agingtaxes.csv
+
 No confidential or client data is used.
+
 
 ## Pipeline
 1. Ingest raw invoice and payment files  
@@ -41,6 +49,8 @@ No confidential or client data is used.
 Python (pandas), SQL (SQLite), Excel, Power BI
 
 ## Documentation
+
+
 Field definitions and assumptions are in `docs/data_dictionary.md`
 
 ## License
