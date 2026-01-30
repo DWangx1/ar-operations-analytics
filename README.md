@@ -1,1 +1,47 @@
-# ar-operations-analytics
+# AR Operations Analytics
+
+## Overview
+End-to-end Accounts Receivable (AR) analytics project using public invoice and payment data.  
+The goal is to replicate a real-world monthly operations reporting workflow, including AR aging, customer payment behavior, and cash receipts analysis.
+
+## Business Problem
+Finance teams often rely on manual Excel processes to answer:
+- How much AR is overdue?
+- Which customers pay late?
+- How are cash receipts trending?
+
+This project demonstrates a structured, repeatable analytics pipeline to support these questions.
+
+## Dataset
+Public demo invoice and payment data.  
+No confidential or client data is used.
+
+## Pipeline
+1. Ingest raw invoice and payment files  
+2. Standardize and validate data  
+3. Join invoices and payments  
+4. Compute AR metrics  
+5. Export analytics tables for reporting and dashboards
+
+## Key Outputs
+- AR aging snapshot
+- Customer payment trends
+- Cash receipts summaries
+- Optional Power BI dashboard
+
+## Repo Structure
+- `data_raw/` raw input files  
+- `data_processed/` cleaned outputs (excluded from git)  
+- `docs/` documentation  
+- `src/` analytics scripts  
+- `sql/` SQL models  
+- `reports/` dashboard notes
+
+## Tech Stack
+Python (pandas), SQL (SQLite), Excel, Power BI
+
+## Documentation
+Field definitions and assumptions are in `docs/data_dictionary.md`
+
+## License
+MIT
