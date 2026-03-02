@@ -48,6 +48,21 @@ No confidential or client data is used.
 ## Tech Stack
 Python (pandas), SQL (SQLite), Excel, Power BI
 
+## How to Run
+1. Put the raw dataset in `data_raw/chronoimpots-agingtaxes.csv`
+2. Run:
+   - `python src/transform.py`
+   - `python src/metrics.py`
+
+(Optional) Run validation:
+- `python src/validate.py`
+
+## Outputs
+Generated in `data_processed/`:
+- `ar_aging_clean.csv` (cleaned version of the raw dataset)
+- `ar_total_by_year.csv` (total AR by fiscal year)
+- `ar_by_bucket_year.csv` (AR totals by aging bucket and fiscal year)
+
 ## Documentation
 
 
