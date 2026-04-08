@@ -57,6 +57,17 @@ Python (pandas), SQL (SQLite), Excel, Power BI
 (Optional) Run validation:
 - `python src/validate.py`
 
+- ### SQLite (optional)
+After generating CSV outputs:
+- `python src/load_sqlite.py`
+
+This creates `data_processed/ar.db` with tables:
+- `ar_raw_clean`
+- `ar_total_by_year`
+- `ar_by_bucket_year`
+
+SQL views are in `sql/views.sql`.
+
 ## Outputs
 Generated in `data_processed/`:
 - `ar_aging_clean.csv` (cleaned version of the raw dataset)
