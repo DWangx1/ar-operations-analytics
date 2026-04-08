@@ -20,7 +20,10 @@ def main():
 
     # Basic numeric cleanup (convert all non-text columns if possible)
     for col in df.columns:
-        df[col] = pd.to_numeric(df[col], errors="ignore")
+    try:
+        df[col] = pd.to_numeric(df[col])
+    except:
+        pass
 
     # Save cleaned version
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
