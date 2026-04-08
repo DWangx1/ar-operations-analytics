@@ -9,7 +9,6 @@ venv/
 .ipynb_checkpoints/
 
 # Data outputs
-data_processed/
 *.sqlite
 *.db
 
