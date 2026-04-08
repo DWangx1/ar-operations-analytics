@@ -15,7 +15,7 @@ def main():
     # These are common in the Canada Open Data file:
     # category_categorie_eng, section_lvl2_niv2_eng, plus many year columns like 2008_2009, 2009_2010, ...
     category_col = "category_categorie_eng"
-    bucket_col = "section_lvl2_niv2_eng"
+    bucket_col = "section-lvl2_niv2_eng"
 
     if category_col not in df.columns or bucket_col not in df.columns:
         raise ValueError(
